@@ -31,7 +31,7 @@ The web interface will be available at http://localhost:7476
 docker run -d \
   -p 7476:7476 \
   -v $(pwd)/config:/config \
-  ghcr.io/autobrr/qui:latest
+  ghcr.io/flotwig/qui:latest
 ```
 
 ## Features

@@ -24,7 +24,7 @@ docker compose up -d
 docker run -d \
   -p 7476:7476 \
   -v $(pwd)/config:/config \
-  ghcr.io/autobrr/qui:latest
+  ghcr.io/flotwig/qui:latest
 ```
 
 ## Local Filesystem Access
@@ -33,13 +33,13 @@ docker run -d \
 
 ## Unraid
 
-Our release workflow builds multi-architecture images (`linux/amd64`, `linux/arm64`, and friends) and publishes them to `ghcr.io/autobrr/qui`, so the container should work on Unraid out of the box.
+Our release workflow builds multi-architecture images (`linux/amd64`, `linux/arm64`, and friends) and publishes them to `ghcr.io/flotwig/qui`, so the container should work on Unraid out of the box.
 
 ### Deploy from the Docker tab
 
 1. Open **Docker → Add Container**
 2. Set **Name** to `qui`
-3. Set **Repository** to `ghcr.io/autobrr/qui:latest`
+3. Set **Repository** to `ghcr.io/flotwig/qui:latest`
 4. Keep the default **Network Type** (`bridge` works for most setups)
 5. Add a port mapping: **Host port** `7476` → **Container port** `7476`
 6. Add a path mapping: **Container Path** `/config` → **Host Path** `/mnt/user/appdata/qui`

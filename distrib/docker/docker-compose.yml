@@ -1,6 +1,6 @@
 services:
   qui:
-    image: ghcr.io/autobrr/qui:latest
+    image: ghcr.io/flotwig/qui:latest
     container_name: qui
     restart: unless-stopped
     ports:
